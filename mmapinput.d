@@ -60,7 +60,7 @@ at memory that has not been touched. See "Avoiding Errors" [1].
 
 [1] https://wikis.oracle.com/display/DTrace/User+Process+Tracing
 */
-    tracemem(copyin(arg0, arg2), 128);
+    tracemem(copyin(arg0, arg1), 128);
     
     self->msz = 0;
     self->mfd = 0;
